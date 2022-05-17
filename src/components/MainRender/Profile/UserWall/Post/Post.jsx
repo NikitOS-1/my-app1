@@ -3,10 +3,12 @@ import style from "./Post.module.css";
 import PostMessage from "./PostMessage/PostMessage";
 import LikeCount from "./LikeCount/LikeCount";
 
-const Post = () => {
+
+
+const Post = (props) => {
     return (
         <div className={style.item}>
-            <PostMessage />
+            <PostMessage posts={props.posts} />
             <LikeCount />
         </div>
     );

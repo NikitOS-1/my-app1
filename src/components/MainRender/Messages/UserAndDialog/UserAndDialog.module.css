@@ -1,0 +1,16 @@
+.main {
+    display: grid;
+    grid-template-areas: 'U D';
+    grid-template-columns: 3fr 9fr;
+    padding: 15px;
+}
+
+.main .user {
+    grid-area: 'U';
+    background-color: rgb(246, 163, 163);
+}
+
+.main .dialog {
+    grid-area: 'D';
+    background-color: rgb(255, 248, 172);
+}

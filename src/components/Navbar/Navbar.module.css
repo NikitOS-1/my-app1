@@ -1,0 +1,19 @@
+.navbar {
+    background-color: black;
+    grid-area: N;
+    padding: 10%;
+}
+
+.item {
+    padding: 10%;
+}
+
+.item :hover {
+    color: azure;
+    text-decoration: none;
+}
+
+.item .active {
+    color: aqua;
+    text-decoration: none;
+}

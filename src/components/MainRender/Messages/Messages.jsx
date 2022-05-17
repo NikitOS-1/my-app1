@@ -15,19 +15,18 @@ let messageData = [
     }
 ];
 
+let messageElement = messageData.map(
+    m => <UserAndDialog
+        userName={m.userName}
+        userId={m.userId}
+        message={m.message}
+    />
+)
+
 const Messages = (props) => {
     return (
         <div className={style.main}>
-            <UserAndDialog
-                userName={messageData[0].userName}
-                userId={messageData[0].userId}
-                message={messageData[0].message}
-            />
-            <UserAndDialog
-                userName={messageData[1].userName}
-                userId={messageData[1].userId}
-                message={messageData[1].message}
-            />
+            {messageElement}
         </div>
     );
 };

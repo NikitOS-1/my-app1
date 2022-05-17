@@ -4,16 +4,18 @@ import AddPost from "./AddPost/AddPost";
 import style from "./UserWall.module.css"
 
 let postData = [
-    {
-        post: 'new post'
-    }
+    { post: 'new pos3t' }
 ];
+
+let postElement = postData.map(p =>
+    <Post posts={p.post} />
+);
 
 const UserWall = (props) => {
     return (
         <div className={style.item}>
             <AddPost />
-            <Post posts={postData[0].post} />
+            {postElement}
         </div>
     );
 };

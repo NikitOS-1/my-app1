@@ -9,7 +9,7 @@ const Post = (props) => {
     return (
         <div className={style.item}>
             <PostMessage posts={props.posts} />
-            <LikeCount />
+            <LikeCount likeCounts={props.likeCounts} />
         </div>
     );
 };

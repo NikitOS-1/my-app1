@@ -4,12 +4,12 @@ import UserTheme from "./UserTheme/UserTheme";
 import UserInfo from "./UserInfo/UserInfo";
 import UserWall from "./UserWall/UserWall";
 
-const Profile = () => {
+const Profile = (props) => {
     return (
         <div className={style.item}>
             <UserTheme />
             <UserInfo />
-            <UserWall />
+            <UserWall postData={props.postData} />
         </div>
     );
 };

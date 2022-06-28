@@ -3,15 +3,11 @@ import Post from "./Post/Post";
 import AddPost from "./AddPost/AddPost";
 import style from "./UserWall.module.css"
 
-let postData = [
-    { post: 'new post' }
-];
-
-let postElement = postData.map(p =>
-    <Post posts={p.post} />
-);
-
 const UserWall = (props) => {
+    let postElement = props.postData.map(p =>
+        <Post posts={p.post} likeCounts={p.likeCount} />
+
+    );
     return (
         <div className={style.item}>
             <AddPost />

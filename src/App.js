@@ -20,6 +20,7 @@ let postData = [
   { post: 'new What', likeCount: 0 },
   { post: 'new sds', likeCount: 39 }
 ];
+
 let messageData = [
   {
       userName: 'Nikita',

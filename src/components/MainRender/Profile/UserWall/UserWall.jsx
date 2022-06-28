@@ -4,7 +4,7 @@ import AddPost from "./AddPost/AddPost";
 import style from "./UserWall.module.css"
 
 let postData = [
-    { post: 'new pos3t' }
+    { post: 'new post' }
 ];
 
 let postElement = postData.map(p =>

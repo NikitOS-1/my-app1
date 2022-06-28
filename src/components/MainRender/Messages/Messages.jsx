@@ -12,6 +12,30 @@ let messageData = [
         userName: 'Sasha',
         userId: 2,
         message: 'Hello im Sasha'
+    },{
+        userName: 'Sasha',
+        userId: 2,
+        message: 'Hello im Sasha'
+    },{
+        userName: 'Sasha',
+        userId: 2,
+        message: 'Hello im Sasha'
+    },{
+        userName: 'Sasha',
+        userId: 2,
+        message: 'Hello im Sasha'
+    },{
+        userName: 'Sasha',
+        userId: 2,
+        message: 'Hello im Sasha'
+    },{
+        userName: 'Sasha',
+        userId: 2,
+        message: 'Hello im Sasha'
+    },{
+        userName: 'Sasha',
+        userId: 2,
+        message: 'Hello im Sasha'
     }
 ];
 

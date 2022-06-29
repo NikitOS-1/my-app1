@@ -6,14 +6,20 @@
 
 .item {
     padding: 10%;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .item :hover {
-    color: azure;
+    color: rgb(153, 156, 156);
     text-decoration: none;
 }
 
 .item .active {
-    color: aqua;
+    color: rgb(127, 240, 240);
     text-decoration: none;
 }

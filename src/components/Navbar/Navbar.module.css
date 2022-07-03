@@ -23,3 +23,9 @@ a {
     color: rgb(127, 240, 240);
     text-decoration: none;
 }
+.navFriends {
+    text-align: center;
+    margin-top: 50%;
+    background-color: bisque;
+    border-radius: 5%;
+}

@@ -1,0 +1,13 @@
+.item {
+    border: solid black 1px;
+    margin: 2px;
+    background-color: aqua;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.item:hover {
+    background-color: white;
+}

@@ -15,6 +15,14 @@ let state = {
             userId: 1,
             message: 'Hello im nikita'
         }
+    ],
+    users: [
+        { user: 'Nik' },
+        { user: 'Nik' },
+        { user: 'Nik' },
+        { user: 'Nik' },
+        { user: 'Nik' },
+        { user: 'Nik' }
     ]
 };
 

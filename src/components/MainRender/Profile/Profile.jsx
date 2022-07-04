@@ -9,7 +9,7 @@ const Profile = (props) => {
         <div className={style.item}>
             <UserTheme />
             <UserInfo />
-            <UserWall postData={props.postData} />
+            <UserWall postData={props.postData} addPost={props.addPost} />
         </div>
     );
 };

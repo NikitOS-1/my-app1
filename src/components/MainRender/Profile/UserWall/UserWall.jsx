@@ -10,7 +10,7 @@ const UserWall = (props) => {
     );
     return (
         <div className={style.item}>
-            <AddPost />
+            <AddPost addPost={props.addPost} />
             {postElement}
         </div>
     );

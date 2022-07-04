@@ -1,9 +1,7 @@
+import { rerenderEntireTree } from '../render';
+
 let state = {
-    posts: [
-        { post: 'new post', likeCount: 0 },
-        { post: 'new post', likeCount: 0 },
-        { post: 'new post', likeCount: 0 }
-    ],
+    posts: [],
     messages: [
         {
             userName: 'Nikita',
@@ -24,6 +22,15 @@ let state = {
         { user: 'Nik' },
         { user: 'Nik' }
     ]
+};
+
+export let addPost = (text) => {
+    let newPost = {
+        post: text,
+        likeCount: 0
+    };
+    state.posts.unshift(newPost);
+    rerenderEntireTree(state);
 };
 
 export default state;

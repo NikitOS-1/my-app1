@@ -5,12 +5,13 @@ import style from "./UserWall.module.css"
 
 const UserWall = (props) => {
     let postElement = props.postData.map(p =>
-        <Post posts={p.post} likeCounts={p.likeCount} />
+        <Post posts={p.post} likeCounts={p.likeCount} />);
 
-    );
     return (
         <div className={style.item}>
-            <AddPost addPost={props.addPost} />
+            <AddPost addPost={props.addPost}
+                newPostText={props.newPostText} />
+
             {postElement}
         </div>
     );

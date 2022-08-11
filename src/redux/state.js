@@ -1,27 +1,35 @@
 import { rerenderEntireTree } from '../render';
 
 let state = {
-    posts: [],
-    messages: [
-        {
-            userName: 'Nikita',
-            userId: 1,
-            message: 'Hello im nikita'
-        },
-        {
-            userName: 'Nikita',
-            userId: 1,
-            message: 'Hello im nikita'
-        }
-    ],
-    users: [
-        { user: 'Nik' },
-        { user: 'Nik' },
-        { user: 'Nik' },
-        { user: 'Nik' },
-        { user: 'Nik' },
-        { user: 'Nik' }
-    ]
+    profilePage: {
+        posts: [],
+        likeCount: 0,
+        newPostText: "Nikita"
+    },
+    messagesPage: {
+        messages: [
+            {
+                userName: 'Nikita',
+                userId: 1,
+                message: 'Hello im nikita'
+            },
+            {
+                userName: 'Nikita',
+                userId: 1,
+                message: 'Hello im nikita'
+            }
+        ]
+    },
+    navbarPage: {
+        users: [
+            { user: 'Nik' },
+            { user: 'Nik' },
+            { user: 'Nik' },
+            { user: 'Nik' },
+            { user: 'Nik' },
+            { user: 'Nik' }
+        ]
+    },
 };
 
 export let addPost = (text) => {
@@ -29,7 +37,7 @@ export let addPost = (text) => {
         post: text,
         likeCount: 0
     };
-    state.posts.unshift(newPost);
+    state.profilePage.posts.unshift(newPost);
     rerenderEntireTree(state);
 };
 

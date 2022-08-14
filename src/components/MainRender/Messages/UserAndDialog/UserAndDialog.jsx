@@ -7,11 +7,15 @@ const UserAndDialog = (props) => {
     return (
         <div className={style.main}>
             <div className={style.user}>
-                <User userName={props.userName} userId={props.userId} />
+                <User userName={props.userName}
+                    userId={props.userId} />
             </div>
 
             <div className={style.dialog}>
-                <Dialog userId={props.userId} message={props.message} />
+                <Dialog userId={props.userId}
+                    message={props.message}
+                    addMessage={props.addMessage}
+                    updateTextMessage={props.updateTextMessage} />
             </div>
         </div>
     );

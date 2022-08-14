@@ -10,7 +10,6 @@ import Music from './components/MainRender/Music/Music';
 import Settings from './components/MainRender/Settings/Settings';
 
 const App = (props) => {
-  
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
@@ -22,10 +21,13 @@ const App = (props) => {
               <Profile
                 postData={props.state.profilePage.posts}
                 addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}
                 newPostText={props.state.profilePage.newPostText} />
             } />
             <Route path='/messages/*' element={
-              <Messages messageData={props.state.messagesPage.messages} />
+              <Messages messageData={props.state.messagesPage.messages}
+                addMessage={props.addMessage}
+                updateTextMessage={props.updateTextMessage} />
             } />
             <Route path='/news/*' element={<News />} />
             <Route path='/music/*' element={<Music />} />

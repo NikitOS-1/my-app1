@@ -7,17 +7,19 @@ const AddPost = (props) => {
     let addText = () => {
         let text = newPostElement.current.value;
         props.addPost(text);
-        newPostElement.current.value = '';
+        props.updateNewPostText("");
     };
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        
+        props.updateNewPostText(text);
     };
 
     return (
         <div className={style.item}>
-            <textarea onChange={onPostChange} ref={newPostElement}
+
+            <textarea onChange={onPostChange}
+                ref={newPostElement}
                 value={props.newPostText}></textarea>
 
             <button onClick={addText}>Post</button>

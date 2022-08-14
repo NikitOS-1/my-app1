@@ -10,8 +10,8 @@ const UserWall = (props) => {
     return (
         <div className={style.item}>
             <AddPost addPost={props.addPost}
+                updateNewPostText={props.updateNewPostText}
                 newPostText={props.newPostText} />
-
             {postElement}
         </div>
     );

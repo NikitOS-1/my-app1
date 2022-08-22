@@ -25,11 +25,11 @@ let store = {
             ]
         },
     },
-    getState() {
-        return this._state;
-    },
     _callSubscriber() {
         console.log("state changed");
+    },
+    getState() {
+        return this._state;
     },
     addMessage(text) {
         this._state.messagesPage.messages.message = text;
